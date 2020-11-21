@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>お問い合わせフォーム</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="fade">お問い合わせフォーム</h1><br>
+<form method="post" action="contact_confirm.php">
+    <dl>
+    <dt><h5 style="display:inline;">※</h5>ハンドルネーム</dt>
+    <dd><input type="text" name="handle_name" placeholder="鈴木 太郎" required></dd>
+
+    <dt>性別</dt>
+    <dd><select name="gender">
+    <option value="">選択してください</option>
+    <option value="1">男性</option>
+    <option value="2">女性</option>
+    <option value="3">ひみつ</option>
+    </select></dd>
+
+    <dt>年齢</dt>
+    <dd><input type="number" min="1" max="127" name="age" placeholder="25">歳</dd>
+
+    <dt><h5 style="display:inline;">※</h5>メールアドレス</dt>
+    <dd><input type="email" name="mail_address" placeholder="info@example.com" required></dd>
+
+    <dt>電話番号</dt>
+    <dd><input type="text" name="phone_number" placeholder="080-1234-5678"></dd>
+
+    <dt><h5 style="display:inline;">※</h5>ご用件</dt>
+    <dd><textarea name="contact" cols="24" rows="4" maxlength="150" required></textarea></dd>
+    <h5>※必須項目</h5>
+    </dl>
+
+    <input type="submit" value="確認">
+
+</form>
+    <a href="index.php">トップページへ戻る</a>
+</body>
+</html>
